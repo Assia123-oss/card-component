@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter" , sans-serif;
+    color:#fff;
+}
+
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    height:100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.content{
+    display: flex;
+    width:75%;
+    margin:7.5rem 0;
+}
+
+.left{
+    width:50%;
+    background-color: hsl(244, 38%, 16%);
+    padding:60px;
+    font-size: 15px;
+    border-radius: 5px 0 0 5px;
+}
+
+span{
+    color: hsl(277, 64%, 61%);
+}
+
+h1{
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.left p{
+    line-height: 1.6;
+    color:#ffffffb6;
+    font-size:15px;
+    font-weight: 200;
+    margin-bottom:4rem;
+}
+.footer{
+    display: flex;
+    gap:2.2rem;
+}
+
+.footer div h3{
+    font-weight: 700;
+    margin-bottom: .4rem;
+
+}
+
+.footer div p{
+  font-weight:400;
+  font-size:0.8rem;
+  color:#ffffffb6 ;
+  letter-spacing: .8px;
+}
+
+
+.right{
+    width: 50%;
+    min-height: 100%;
+    background-image: linear-gradient(to top, hsla(277, 56%, 38%, 0.356), hsla(277, 56%, 38%, 0.356)), url("./images/image-header-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 5px 5px 0;
+}
+
+ @media(max-width:960px){
+    body{
+        height:125vh;
+    }
+   .content{
+    flex-direction: column-reverse;
+    width:70%;
+    display: flex;
+   }
+   .left{
+    padding:30px;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+   }
+   h1 {
+       line-height: 1.3;
+       font-weight: 600;
+       margin-bottom: 1rem;
+       font-size:1.6rem;
+   }
+
+   .left p {
+       line-height: 1.6;
+       color: #ffffffb6;
+       font-size: 1rem;
+       font-weight: 200;
+       margin-bottom: 2.5rem;
+   }
+   .footer {
+    display: flex;
+    flex-direction: column;
+    gap:0;
+   }
+   
+   .footer div h3 {
+       font-weight: 600;
+       margin-bottom: .3rem;
+   }
+
+   .footer div p {
+       font-weight: 300;
+       font-size: 0.8rem;
+       letter-spacing: .8px;
+       margin-bottom:20px;
+   }
+   .right{
+    width:50%;
+    height:50%;
+    background-image: linear-gradient(to top,hsla(277, 56%, 38%, 0.356),hsla(277, 56%, 38%, 0.356)),url("./images/image-header-mobile.jpg");
+    background-size:contain;
+    background-position: center;
+    border-radius: 5px 5px 0 0;
+   }
+
+} 
+
+
+
+
